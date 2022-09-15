@@ -1,0 +1,64 @@
+{% extends "base.html"%}
+<!-- ################################################################ -->
+
+{% block stylesheet_links%}
+	<link href="../../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+	<!-- Custom styles for this template-->
+	<link href="../../static/css/sb-admin-2.min.css" rel="stylesheet">
+{% endblock%}
+{% block favicon%}../../static/assets/img/favicon.ico{% endblock%}
+
+{% block title %}Flight Dashboard{% endblock %}
+{% block script_links%}
+	<!-- Bootstrap core JavaScript-->
+	<script src="../../static/vendor/jquery/jquery.min.js"></script>
+	<script src="../../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Core plugin JavaScript-->
+	<script src="../../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Custom scripts for all pages-->
+	<script src="../../static/js/sb-admin-2.min.js"></script>
+
+	<!-- Page level plugins -->
+	<script src="../../static/vendor/chart.js/Chart.min.js"></script>
+
+	<!-- Page level custom scripts -->
+	<script src="../../static/js/demo/chart-area-demo.js"></script>
+	<script src="../../static/js/demo/chart-pie-demo.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../static/index.js"></script>
+{% endblock%}
+{% block undraw_profile_1%}../../static/img/undraw_profile_1.svg{% endblock%}
+{% block undraw_profile%}../../static/img/undraw_profile.svg{% endblock%}
+{% block content %}
+<div class="container-fluid">
+	<!-- Outer Row -->
+	<div class="row justify-content-center">
+
+		<div class="col-xl-10 col-lg-1 col-md-10">
+
+			<div class="card o-hidden border-0 shadow-lg my-5">
+				<div class="card-body p-4">
+					<!-- Nested Row within Card Body -->
+					<div class="container-fluid">
+						<!-- button for upload a photo to the databases! -->
+						<legend class="border-bottom mb-4">Detect airport apron equipments from an image</legend>
+						<p>PS: Object Detection - YOLOv4 algorithm</u></p>
+						<div className="pre_img">
+							<span><img id="imagebox" src=""></span>
+						</div>
+						<form>
+						<input id="imageinput" type="file" name="image" onchange="readUrl(this)">
+						</form>
+						<button name="send" id = "sendbutton">Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+<!-- ################################################################################"" -->
