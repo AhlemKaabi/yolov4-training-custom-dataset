@@ -1,2 +1,12 @@
-# yolov4-training-custom-dataset
-This repository was made in the frame of Holberton School, re-train YOLOv4 model on the custom dataset to detect airport apron equipment.
+# *YOLOv4 Training Custom Dataset*
+
+```
+@misc{bochkovskiy2020yolov4,
+      title={YOLOv4: Optimal Speed and Accuracy of Object Detection}, 
+      author={Alexey Bochkovskiy and Chien-Yao Wang and Hong-Yuan Mark Liao},
+      year={2020},
+      eprint={2004.10934},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
