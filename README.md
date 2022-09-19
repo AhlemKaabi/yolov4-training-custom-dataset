@@ -71,7 +71,7 @@ This task was implemented into a flask web application, here is an output sample
 
 # Authors
 
-<h2 align='center'> Ahlem Kaabi <h2>
+<p align='center'> Ahlem Kaabi <p>
 
 <p align='center'>
   <a href="https://www.linkedin.com/in/k-ahlem/">
